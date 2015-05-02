@@ -36,3 +36,13 @@ var addition = 1 + 1,
 // Comparison operators
 // Regular Comparison ==
 // Strict Comparison ===
+
+typeof 1
+// typeof [] -> object
+// typeof null -> object
+// true && 1 -> 1 -> && returns the value of the last operand
+// !!(true && 1) -> true
+var bar = {};
+// (bar !== null) && (typeof bar === "object")
+// (bar !== null) && ((typeof bar === "object") || (typeof bar === "function"))
+// (bar !== null) && (typeof bar === "object") && (toString.call(bar) !== "[object Array]")
