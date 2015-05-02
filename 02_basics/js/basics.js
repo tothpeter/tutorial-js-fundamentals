@@ -19,10 +19,20 @@ console.log(isNaN("A"));
 // Composite data type
 // Array, Object
 
-obj = {
+var obj = {
   asd: 1,
   d: 2
-}
+};
 
 obj.asd;
 obj['asd'];
+
+var addition = 1 + 1,
+    subtraction = 1 - 1,
+    multiplication = 1 * 1,
+    division = 1 / 1,
+    remainder = 5 % 2; // modulus operator
+
+// Comparison operators
+// Regular Comparison ==
+// Strict Comparison ===
