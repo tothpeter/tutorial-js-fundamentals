@@ -65,15 +65,36 @@ var myFn = function myFn() {
 var hoistedVar = "Hello";
 
 (function siaf() {
-  console.log("Self invoke");
+  // console.log("Self invoke");
 }());
 
 !function siaf2() {
-  console.log("Self invoke2");
+  // console.log("Self invoke2");
 }();
 
 
 hoistedFn();
 function hoistedFn() {
-  console.log("Hoisted FN");
+  // console.log("Hoisted FN");
 }
+
+(function(){
+  'use strict';
+  console.log(this);
+
+  var obj = {
+    prop: 'AAA',
+    fun: function() {
+      console.log(this);
+    }
+  }
+
+  obj.fun();
+
+  function Person(name) {
+    this.name = name
+  }
+
+  var bob = new Person('Bob');
+  console.log(bob);
+}());
