@@ -2,7 +2,7 @@
 
 // Primitives
 // # Number
-console.log(isNaN("A"));
+// console.log(isNaN("A"));
 
 // # String
 // # Boolean
@@ -54,4 +54,26 @@ function getThingBycolour(colour) {
   }
 
   return things[colour] || 'Default string';
+}
+
+var myFn = function myFn() {
+  
+}
+
+// console.log(hoistedVar);
+
+var hoistedVar = "Hello";
+
+(function siaf() {
+  console.log("Self invoke");
+}());
+
+!function siaf2() {
+  console.log("Self invoke2");
+}();
+
+
+hoistedFn();
+function hoistedFn() {
+  console.log("Hoisted FN");
 }
