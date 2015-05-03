@@ -46,3 +46,12 @@ var bar = {};
 // (bar !== null) && (typeof bar === "object")
 // (bar !== null) && ((typeof bar === "object") || (typeof bar === "function"))
 // (bar !== null) && (typeof bar === "object") && (toString.call(bar) !== "[object Array]")
+
+function getThingBycolour(colour) {
+  var things = {
+    red: 'a red thing',
+    green: 'a green thing'
+  }
+
+  return things[colour] || 'Default string';
+}
