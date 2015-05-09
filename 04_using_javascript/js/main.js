@@ -46,5 +46,57 @@
   var testArrayCopy = testArray2;
   testArrayCopy = [10];
 
-  console.log(testArray2);
+  // console.log(testArray2);
+  
+  testArray.forEach(function(value, index, array_itself) {
+    // console.log(index + ". " + value);
+  });
+
+  // testArray.push(3);
+
+  var everyElement = testArray.every(function(value) {
+    return typeof value === 'string';
+  });
+
+  // console.log(everyElement);
+
+  // testArray.push(3);
+
+  var anyElement = testArray.some(function(value) {
+    return typeof value === 'number';
+  });
+
+  // console.log(anyElement);
+
+  // testArray.push(3);
+  var filteredArray = testArray.filter(function(value) {
+    return typeof value === 'number';
+  });
+
+  // console.log(filteredArray);
+  
+  // testArray.push(3);
+  var mapArray = testArray.map(function(value) {
+    return value + " --";
+  });
+
+  // console.log(mapArray);
+
+  console.log([1,2,3].reduce(function(total, current_value, index, array_itself) {
+    return total += current_value;
+  },0));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }();
