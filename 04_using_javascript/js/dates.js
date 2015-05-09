@@ -20,9 +20,9 @@
 
   // console.log(dob.getUTCDay());
 
-  console.log(dob.toDateString());
-  console.log(dob.toTimeString());
-  console.log(dob.toISOString());
+  // console.log(dob.toDateString());
+  // console.log(dob.toTimeString());
+  // console.log(dob.toISOString());
 
-  console.log(dob.toLocaleString());
+  // console.log(dob.toLocaleString());
 }();
