@@ -82,9 +82,9 @@
 
   // console.log(mapArray);
 
-  console.log([1,2,3].reduce(function(total, current_value, index, array_itself) {
-    return total += current_value;
-  },0));
+  // console.log([1,2,3].reduce(function(total, current_value, index, array_itself) {
+  //   return total += current_value;
+  // },0));
 
 
 
