@@ -41,5 +41,25 @@
   mainHeading.setAttribute('contenteditable', true);
   // console.log(mainHeading.hasAttribute('contenteditable'));
   mainHeading.removeAttribute('contenteditable');
-  
+
+  var div3 = document.getElementById('div3');
+  // console.log(div3.childNodes.length);
+
+  // for (var x = 0, len = div3.childNodes.length; x < len; x++) {
+  //   if (div3.childNodes[x].nodeType === 1) {
+  //     console.log('I am a ' + div3.childNodes[x].tagName);
+  //   }
+  // }
+
+  // It gives back only element nodes (old ide gives back comments as well)
+  // console.log(div3.children.length);
+
+  // console.log(div3.childNodes[0].nodeName);
+  // console.log(div3.firstChild.nodeName);
+  // console.log(div3.children[0].nodeName);
+
+  // console.log(div3.parentNode);
+
+  console.log(div3.previousSibling);
+  console.log(div3.nextSibling);
 }();
