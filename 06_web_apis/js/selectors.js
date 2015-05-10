@@ -5,5 +5,5 @@
   // console.log(mainHeading);
 
   var headers = document.querySelectorAll('header');
-  console.log(headers);
+  // console.log(headers);
 }();
