@@ -6,16 +6,16 @@
   // console.log(document.getElementsByTagName('div'));
   // console.log(document.getElementsByName('div'));
 
-  var header = document.getElementById('mainHeading');
+  var mainHeading = document.getElementById('mainHeading');
   var divs = document.getElementsByTagName('div');
   var div = document.getElementsByTagName('div')[0];
 
-  // console.log(header.id);
+  // console.log(mainHeading.id);
 
 
-  // console.log(header);
-  // header.id = "newID";
-  // console.log(header);
+  // console.log(mainHeading);
+  // mainHeading.id = "newID";
+  // console.log(mainHeading);
 
   // console.log(div.className);
   // div.className = "total new class names"
@@ -30,11 +30,11 @@
   // Elemenet node type = 1
   // console.log(div.nodeType);
   // Text node type = 3
-  // console.log(header.childNodes[0].nodeType);
+  // console.log(mainHeading.childNodes[0].nodeType);
   
 
-  mainHeading.innerHTML = '<span>' + mainHeading.innerHTML +'</span>';
-  mainHeading.outerHTML = '<div>' + mainHeading.outerHTML +'</div>';
+  // mainHeading.innerHTML = '<span>' + mainHeading.innerHTML +'</span>';
+  // mainHeading.outerHTML = '<div>' + mainHeading.outerHTML +'</div>';
 
   divs[2].textContent = "<span>aAAA</span>";
 
@@ -60,6 +60,18 @@
 
   // console.log(div3.parentNode);
 
-  console.log(div3.previousSibling);
-  console.log(div3.nextSibling);
+  // console.log(div3.previousSibling);
+  // console.log(div3.nextSibling);
+
+  document.body.appendChild(mainHeading);
+  document.body.insertBefore(mainHeading, div);
+  // document.body.removeChild(mainHeading);
+
+  // if (document.body.contains(mainHeading)) {
+  //   document.body.removeChild(mainHeading);
+  // }
+
+  var substitute = document.createElement('i');
+  substitute.textContent = 'I have been swapped in';
+  document.body.replaceChild(substitute, mainHeading);
 }();
