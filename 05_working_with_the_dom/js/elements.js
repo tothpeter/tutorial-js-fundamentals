@@ -63,15 +63,15 @@
   // console.log(div3.previousSibling);
   // console.log(div3.nextSibling);
 
-  document.body.appendChild(mainHeading);
-  document.body.insertBefore(mainHeading, div);
+  // document.body.appendChild(mainHeading);
+  // document.body.insertBefore(mainHeading, div);
   // document.body.removeChild(mainHeading);
 
   // if (document.body.contains(mainHeading)) {
   //   document.body.removeChild(mainHeading);
   // }
 
-  var substitute = document.createElement('i');
-  substitute.textContent = 'I have been swapped in';
-  document.body.replaceChild(substitute, mainHeading);
+  // var substitute = document.createElement('i');
+  // substitute.textContent = 'I have been swapped in';
+  // document.body.replaceChild(substitute, mainHeading);
 }();
