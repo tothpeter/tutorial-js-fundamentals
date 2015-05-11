@@ -1,0 +1,12 @@
+{
+  "people": [
+    {
+      "name": "dan",
+      "job": "developer"
+    },
+    {
+      "name": "fred",
+      "job": "managger"
+    }
+  ]
+}

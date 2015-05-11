@@ -67,6 +67,6 @@
     configureable: true,
     enumerable: true
   });
-  console.log(bob);
+  // console.log(bob);
   // console.log(fred);
 }();
