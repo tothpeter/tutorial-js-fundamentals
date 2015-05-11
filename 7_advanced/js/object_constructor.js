@@ -43,4 +43,30 @@
   var extensible = {};
   Object.preventExtensions(extensible);
   // console.log(Object.isExtensible(extensible));
+
+  // Class like, constructor
+  var Person = function(name) {
+    this.name = name;
+  }
+
+  Person.prototype = {
+    greet: function(){
+      return this.name;
+    }
+  }
+
+  var fred = new Person('Fred')
+
+  var bob = Object.create(Person.prototype,{
+    name: { writeable: true, value: 'Bob2' }
+  });
+
+  Object.defineProperty(bob, 'job', {
+    value: 'Dev',
+    writeable: true,
+    configureable: true,
+    enumerable: true
+  });
+  console.log(bob);
+  // console.log(fred);
 }();
